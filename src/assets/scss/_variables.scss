@@ -1,0 +1,42 @@
+//Colors//
+
+// Couleurs principales
+$primary-red: #FF6060;
+$secondary-black: #00000000;
+$tertiary-white: #FFFFFF;
+
+// Utilitaires Couleurs
+$grey: #666666;
+$host-lightgrey:#C4C4C4;
+// $gradient-color: linear-gradient($secondary-pink, $primary-purple);
+
+//Fonts//
+
+// fontFamily
+$fontFamily:"Montserrat", sans-serif;
+
+// fontSize 
+$size-x-large: 2.25em; //36px
+$size-large: 1.5em; //24px
+$size-x-mediumSize: 1.125em; //18px
+$size-x-small: 0.875em; //14px
+
+$size-x-large: 1.75em; //28px
+$size-mediumSize: 1.0625em; //17px
+$size-normal: 1em;
+$size-small: 0.9375em; //15px
+
+// fontWeight
+$fontBold: 700;
+$fontMedium: 500;
+$fontRegular: 400;
+// $fontLight: 300;
+
+// Utilitaires Dimensions
+// $buttonSize: 173px;
+
+//Breakpoints (device responsive)
+$breakpoints: (
+  table: 768px,
+  desktop: 1024px,
+);
