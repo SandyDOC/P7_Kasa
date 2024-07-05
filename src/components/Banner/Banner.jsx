@@ -1,10 +1,13 @@
 import React from "react";
 
-function Banner() {
-    return <>
-    <img src="public\images\eric-muhr-P_XxsdVgtpQ-unsplash.jpg" alt="vue de l'océan en bord de falaise"/>
-    <p>Chez vous, partout et ailleurs</p>
-    </>
+function Banner({image, title}) {
+    return (
+        <div id="banner">
+            <img src={image} alt="bannière"/>
+            <p>{title}</p>
+        </div>
+    )
+  
 }
 
 export default Banner;

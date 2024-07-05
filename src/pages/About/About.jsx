@@ -1,16 +1,20 @@
 import React from "react";
-import Header from "./components/Header/Header";
-import Banner from "./components/Banner/Banner";
-import Collapse from "./components/Collapse/Collapse";
-import Footer from "./components/Footer/Footer";
+
+import Banner from "./../../components/Banner/Banner";
+import Collapse from "./../../components/Collapse/Collapse";
+import BannerImage from "./../../assets/images/eric-muhr-P_XxsdVgtpQ-unsplash.jpg";
 
 function About() {
-    return <>
-    <Header/>
-    <Banner/>
-    <Collapse/>
-    <Footer/>
-    </>
+    return (
+        <>
+            <Banner image={BannerImage}  />
+            <Collapse/>
+        </>
+       
+    )
+    
+   
+   
 }
 
 export default About;

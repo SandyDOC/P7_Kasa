@@ -1,16 +1,16 @@
 import React from "react";
-import Header from "./components/Header/Header";
-import Banner from "./components/Banner/Banner";
-import Card from "./components/Card/Card";
-import Footer from "./components/Footer/Footer";
-// import Header from "./components/Header/Header";
+
+import Banner from "./../../components/Banner/Banner";
+import Card from "./../../components/Card/Card";
+import BannerHome from "./../../assets/images/banniereHome.png";
+
 
 function Home() {
   return <>
-  <Header/>
-    <Banner/>
+  
+    <Banner image={BannerHome} title="Chez vous, partout et ailleurs" />
     <Card/>
-  <Footer/>
+  
      {/* <Header/> */}
   </>
 }

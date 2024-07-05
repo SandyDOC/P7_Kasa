@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "./components/Header/Header";
-import Collapse from "./components/Collapse/Collapse";
-import Footer from "./components/Footer/Footer";
+
+import Collapse from "./../../components/Collapse/Collapse";
+
 
 const title = "Cozy loft on the Canal Saint-Martin";
 const subtitle = "Paris, Île-de-France";
@@ -9,7 +9,7 @@ const hostText = "Alexandre Dumas";
 
 function LogementDetails() {
   return <>
-  <Header/>
+  
   <img src="" alt="" />
   <i></i>
   <i></i>
@@ -28,7 +28,7 @@ function LogementDetails() {
   </div>
     <Tag/>
     <Collapse/>
-  <Footer/>
+
   </>
 }
 
