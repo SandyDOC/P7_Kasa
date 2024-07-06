@@ -1,18 +1,18 @@
 import React from "react";
-
 import Banner from "./../../components/Banner/Banner";
+import BannerHome from "./../../assets/images/img/banniereHome.png";
 import Card from "./../../components/Card/Card";
-import BannerHome from "./../../assets/images/banniereHome.png";
-
+import "./Home.scss";
 
 function Home() {
-  return <>
-  
+  return (
+  <main>
     <Banner image={BannerHome} title="Chez vous, partout et ailleurs" />
-    <Card/>
-  
-     {/* <Header/> */}
-  </>
+    <section id="gallery">
+      <Card/>
+    </section>
+  </main>
+  )
 }
 
 export default Home;
