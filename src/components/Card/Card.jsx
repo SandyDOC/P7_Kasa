@@ -6,7 +6,7 @@ const titreLocation = "Titre de la location";
 
 function Card() {
  return (
-  <Link to="/logement"> 
+  <Link to="/logement-details"> 
     <figure>
       <figcaption>{titreLocation}</figcaption>
     </figure>
