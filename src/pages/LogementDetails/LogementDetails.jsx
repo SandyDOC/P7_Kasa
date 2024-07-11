@@ -1,7 +1,8 @@
 import React from "react";
 import "./LogementDetails.scss";
-// import Collapse from "./../../components/Collapse/Collapse";
-
+// import Tag from "./../../components/Tag/Tag";
+import Collapse from "./../../components/Collapse/Collapse";
+import Background from "./../../assets/images/img/Background.png";
 const title = "Cozy loft on the Canal Saint-Martin";
 const subtitle = "Paris, Île-de-France";
 const hostText = "Alexandre Dumas";
@@ -9,10 +10,11 @@ const hostText = "Alexandre Dumas";
 function LogementDetails() {
   return (
     <>
-      <div className="carrousel">
+      <section className="carrousel">
         <img
+        image={Background}
           className="carrousel-img"
-          src="./../../assets/images/img/banniereHome.png"
+          src="./../../assets/images/img/Background.png"
           alt="image relaxante d'une statue de Bouddha"
         />
         <img
@@ -25,7 +27,7 @@ function LogementDetails() {
           src="images/icons/arrow_right.png"
           alt="flèche droite"
         />
-      </div>
+      </section>
       <div className="main_logement">
         <div className="presentation">
           <section id="informations">
@@ -33,10 +35,9 @@ function LogementDetails() {
             <p>{subtitle}</p>
           </section>
           <section className="tags">
-            {/* <span></span> */}
-            <p>Cozy</p>
-            <p>Paris 10</p>
-            <p>Canal</p>
+            {/* <Tag/>
+            <Tag/>
+            <Tag/> */}
           </section>
         </div>
         <section id="host">
@@ -49,7 +50,20 @@ function LogementDetails() {
           </div>
         </section>
         <section className="collapse">
-          <button type="button" className="collapsible">Description</button>
+          <Collapse/>
+          <Collapse/>
+        </section>
+      </div>
+    </>
+  );
+}
+
+{/* <p>Cozy</p>
+<p>Paris 10</p>
+<p>Canal</p> */}
+export default LogementDetails;
+
+  {/* <button type="button" className="collapsible">Description</button>
           <div className="content">
             <p>
               Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants.<br />
@@ -68,11 +82,4 @@ function LogementDetails() {
               Sèche-cheveux<br />
               Cintres.
             </p>
-          </div>
-        </section>
-      </div>
-    </>
-  );
-}
-
-export default LogementDetails;
+          </div> */}

@@ -9,7 +9,6 @@ import About from './pages/About/About';
 import Error from "./pages/Error/Error";
 import LogementDetails from './pages/LogementDetails/LogementDetails';
 
-// import Card from "./components/Card/Card";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 
@@ -23,11 +22,9 @@ root.render(
         <Route path="/about" element={<About/>}/>
         <Route path="*" element={<Error/>}/>
         <Route path="/logement-details" element={<LogementDetails />} />
-        {/* <Route path="/logement" element={<Card/>}/> */}
       </Routes> 
       <Footer/>
     </Router> 
-
   </React.StrictMode>
 );
 

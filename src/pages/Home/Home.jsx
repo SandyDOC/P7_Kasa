@@ -4,15 +4,12 @@ import BannerHome from "./../../assets/images/img/banniereHome.png";
 import Card from "./../../components/Card/Card";
 import "./Home.scss";
 import "./../../assets/scss/style.scss";
-import {Link} from "react-router-dom";
-// import LogementDetails from './pages/LogementDetails/LogementDetails';
 
 function Home() {
   return (
     <main>
     <Banner image={BannerHome} title="Chez vous, partout et ailleurs" />
     <section id="gallery">
-      {/* <Link to="/logement-details"><Card /></Link>       */}
       <Card/>
       <Card/>
       <Card/>

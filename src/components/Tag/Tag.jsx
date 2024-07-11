@@ -1,10 +1,11 @@
 import React from "react";
+import "./Collapse.scss";
 
 const location = "Paris 10";
 
 function Tag() {
   return <>
-  <p>{location}</p>
+  <span className="tag">{location}</span>
   </>
 }
 
