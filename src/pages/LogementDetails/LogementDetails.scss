@@ -1,15 +1,9 @@
 .main_logement {
     display: flex;
     flex-wrap: wrap;
-    // flex-direction: column;
     justify-content: space-around;
-    // margin-bottom: 60px;
     padding: 40px 0 40px 40px;
 }
-
-// .presentation {
-//     padding-bottom: 20px;
-// }
 
 #informations {
     h1 {
@@ -29,14 +23,6 @@
         padding-bottom: 36px; 
     }
 }
-
-// #informations p {
-//     font-weight: 500;
-//     font-size: 18px;
-
-//     line-height: 25.67px;
-//     padding-bottom: 15px;
-// }
 
 .tags {
     display: flex;
@@ -59,17 +45,9 @@
     }
 }
 
-// #host p {
-//     color: #FF6060;
-//     font-weight: 500;
-//     font-size: 18px;
-
-//     line-height: 25.67px;
-// }
-
 .collapse {
     display: flex;
-    justify-content: center;
-    padding-bottom: 40px;
-    gap: 9%;
+    justify-content: space-between;
+    padding: 0px 30px 40px 30px;
+    max-width: 1240px;
 }

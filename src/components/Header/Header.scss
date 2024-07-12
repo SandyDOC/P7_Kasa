@@ -3,9 +3,18 @@ header {
     justify-content: space-between;
     padding: 15px 50px 30px 50px;
 
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+    
     img {
         width: 210.32px;
         height: 68px;
+
+        @media (max-width: 768px) {
+            width: 145px;
+            height: 46.88px;
+        }
     }
 
     nav {
@@ -15,21 +24,14 @@ header {
     }
 }
 
-//   header img#logo {
-//     width: 210.32px;
-//     height: 68px;
-//   }
-
-//   header nav {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//   }
 header nav ul {
     display: flex;
     gap: 57px;
 
-    /* gap: 4.722vw; */
+    @media (max-width: 768px) {
+        gap: 26px;
+    }
+
     li {
         display: flex;
         list-style: none;
@@ -43,6 +45,12 @@ header nav ul {
             text-decoration: none;
             color: black;
             border-bottom: 2px solid white;
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+                line-height:17.11px ;
+                text-transform: uppercase;
+            }
 
             &:hover {
                 border-bottom: 2px solid black;
