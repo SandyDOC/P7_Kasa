@@ -5,15 +5,29 @@ main {
 
         font-size: 288px;
         line-height: 410.69px;
+    
+        @media (max-width: 768px) {
+            font-size: 99px;
+        }
     }
     p.explicationError {
         color: #FF6060;
-        font-weight: 36px;
+        font-weight: 500;
+        font-size: 36px;
 
         line-height: 51.34px;
+
+        @media (max-width: 768px) {
+            font-size: 18px;
+            line-height: 25.67px;
+            width: 70%;
+        }
     }
     a.homeError {
         padding: 60px;
-        // text-decoration: black;
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 }
