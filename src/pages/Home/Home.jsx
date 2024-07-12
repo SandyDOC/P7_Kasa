@@ -3,7 +3,6 @@ import Banner from "./../../components/Banner/Banner";
 import BannerHome from "./../../assets/images/img/banniereHome.png";
 import Card from "./../../components/Card/Card";
 import "./Home.scss";
-import "./../../assets/scss/style.scss";
 
 function Home() {
   return (

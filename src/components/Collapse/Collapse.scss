@@ -1,58 +1,60 @@
-   .collapsible {
-     background-color: #FF6060;
-     // background-color: $primary-red;
-     color: white;
-     cursor: pointer;
+@import "./../../assets/scss/style.scss";
 
-     padding: 10px 20px 10px 10px;
-     width: 45%;
-     border: none;
-     text-align: left;
-     outline: none;
+.collapsible {
+  // background-color: #FF6060;
+  background-color: $primary-red;
+  color: $tertiary-white;
+  cursor: pointer;
 
-     font-family: "Montserrat",sans-serif;
-     font-size: 18px;
-     font-weight: 700;
-     border-radius: 10px;
+  padding: 10px 20px 10px 10px;
+  width: 45%;
+  border: none;
+  text-align: left;
+  outline: none;
 
-     @media (max-width: 768px) {
-      max-width: 335px;
-      font-size: 13px;
-      line-height: 18.54px;
-     }
+  // font-family: "Montserrat", sans-serif;
+  font-size: $size-x-mediumSize;
+  font-weight: $fontBold;
+  border-radius: 10px;
 
-     p {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-     }
-   }
+  @media (max-width: 768px) {
+    max-width: 335px;
+    font-size: 13px;
+    line-height: 18.54px;
+  }
 
-   .content {
-     display: none;
-     overflow: hidden;
-     background-color: #f1f1f1;
-     padding: 0 18px;
-     width: 41%;
+  p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
-     font-weight: 400;
-     font-size: 18px;
-     line-height: 25.67px;
-   }
+.content {
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 0 18px;
+  width: 41%;
 
-   .collapse_about {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     margin-top: 40px;
-     margin-bottom: 40px;
+  font-weight: $fontRegular;
+  font-size: $size-x-mediumSize;
+  line-height: 25.67px;
+}
 
-     button.collapsible {
-       margin-bottom: 20px;
-       width: 81%;
+.collapse_about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 
-       @media (max-width: 768px) {
-        width: 100%;
-       }
-     }
-   }
+  button.collapsible {
+    margin-bottom: 20px;
+    width: 81%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}

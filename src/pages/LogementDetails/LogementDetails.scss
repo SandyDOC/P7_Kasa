@@ -1,3 +1,5 @@
+@import "./../../assets/scss/style.scss";
+
 .main_logement {
     display: flex;
     flex-wrap: wrap;
@@ -7,16 +9,16 @@
 
 #informations {
     h1 {
-        color: #FF6060;
-        font-weight: 500;
-        font-size: 36px;
+        color: $primary-red;
+        font-weight: $fontMedium;
+        font-size: $size-big-large;
 
         line-height: 51.34px;
     }
 
     p {
-        font-weight: 500;
-        font-size: 18px;
+        font-weight: $fontMedium;
+        font-size: $size-x-mediumSize;
     
         line-height: 25.67px;
         padding-top: 10px;
@@ -38,8 +40,8 @@
 
     p {
         color: #FF6060;
-        font-weight: 500;
-        font-size: 18px;
+        font-weight: $fontMedium;
+        font-size: $size-x-mediumSize;
 
         line-height: 25.67px;
     }

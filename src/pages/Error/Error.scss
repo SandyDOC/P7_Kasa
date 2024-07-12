@@ -1,7 +1,9 @@
+@import "./../../assets/scss/style.scss";
+
 main {
     p.numberError {
-        color: #FF6060;
-        font-weight: 700;
+        color: $primary-red;
+        font-weight: $fontBold;
 
         font-size: 288px;
         line-height: 410.69px;
@@ -11,14 +13,14 @@ main {
         }
     }
     p.explicationError {
-        color: #FF6060;
-        font-weight: 500;
-        font-size: 36px;
+        color: $primary-red;
+        font-weight: $fontMedium;
+        font-size: $size-big-large;
 
         line-height: 51.34px;
 
         @media (max-width: 768px) {
-            font-size: 18px;
+            font-size: $size-x-mediumSize;
             line-height: 25.67px;
             width: 70%;
         }
@@ -27,7 +29,7 @@ main {
         padding: 60px;
 
         @media (max-width: 768px) {
-            font-size: 14px;
+            font-size: $size-x-small;
         }
     }
 }

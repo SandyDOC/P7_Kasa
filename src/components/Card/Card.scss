@@ -1,28 +1,47 @@
+@import "./../../assets/scss/style.scss";
+
 figure {
   background: #FF6060;
-  width: 75%;
-  max-width: 340px;
+  // width: 75%;
+  width: 340px;
+  height: 340px;
   // height: 26vh;
   position: relative;
-  height: 340px;
   border-radius: 10px;
   /* background:linear-gradient(to top, #040404 0.1%, #ff6060 30%); */
   /* background:linear-gradient(#ffffff 0, #0a0a0a 0, #040404 20.5%, #000000 50%); */
 
   @media (max-width: 768px) {
-    width: 100%;
+    // width: 100%;
+    width: 255px;
     height: 255px;
   }
 
+  figcaption {
+    position: absolute;
+    bottom: 14px;
+    left: 15px;
+  
+    font-size: $size-x-mediumSize;
+    // font-size: 18px;
+    font-weight: $fontBold;
+    // font-weight: 700;
+    line-height: 25.76px;
+    color: $tertiary-white;
+    // color: white;
+  }
 }
 
-figure figcaption {
-  position: absolute;
-  bottom: 14px;
-  left: 15px;
+// figure figcaption {
+//   position: absolute;
+//   bottom: 14px;
+//   left: 15px;
 
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 25.76px;
-  color: white;
-}
+//   font-size: $size-x-mediumSize;
+//   // font-size: 18px;
+//   font-weight: $fontBold;
+//   // font-weight: 700;
+//   line-height: 25.76px;
+//   color: $tertiary-white;
+//   // color: white;
+// }

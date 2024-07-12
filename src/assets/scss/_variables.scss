@@ -2,7 +2,8 @@
 
 // Couleurs principales
 $primary-red: #FF6060;
-$secondary-black: #00000000;
+$secondary-black: black;
+// $secondary-black: #00000000;
 $tertiary-white: #FFFFFF;
 
 // Utilitaires Couleurs
@@ -16,7 +17,7 @@ $host-lightgrey:#C4C4C4;
 $fontFamily:"Montserrat", sans-serif;
 
 // fontSize 
-$size-x-large: 2.25em; //36px
+$size-big-large: 2.25em; //36px
 $size-large: 1.5em; //24px
 $size-x-mediumSize: 1.125em; //18px
 $size-x-small: 0.875em; //14px
