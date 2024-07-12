@@ -1,5 +1,5 @@
 import React from "react";
-import "./Collapse.scss";
+import "./Tag.scss";
 
 const location = "Paris 10";
 

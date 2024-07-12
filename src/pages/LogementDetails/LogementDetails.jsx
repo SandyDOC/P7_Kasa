@@ -1,8 +1,13 @@
 import React from "react";
 import "./LogementDetails.scss";
-// import Tag from "./../../components/Tag/Tag";
+
+import Carrousel from "../../components/Carrousel/Carrousel";
+import Tag from "./../../components/Tag/Tag";
+import Star from "./../../components/Star/Star";
 import Collapse from "./../../components/Collapse/Collapse";
-import Background from "./../../assets/images/img/Background.png";
+
+import ProfilHost from "./../../assets/images/icons/Host.png";
+
 const title = "Cozy loft on the Canal Saint-Martin";
 const subtitle = "Paris, Île-de-France";
 const hostText = "Alexandre Dumas";
@@ -10,24 +15,7 @@ const hostText = "Alexandre Dumas";
 function LogementDetails() {
   return (
     <>
-      <section className="carrousel">
-        <img
-        image={Background}
-          className="carrousel-img"
-          src="./../../assets/images/img/Background.png"
-          alt="image relaxante d'une statue de Bouddha"
-        />
-        <img
-          className="arrow_left"
-          src="images/icons/arrow_left.png"
-          alt="flèche gauche"
-        />
-        <img
-          className="arrow_right"
-          src="images/icons/arrow_right.png"
-          alt="flèche droite"
-        />
-      </section>
+      <Carrousel />
       <div className="main_logement">
         <div className="presentation">
           <section id="informations">
@@ -35,25 +23,33 @@ function LogementDetails() {
             <p>{subtitle}</p>
           </section>
           <section className="tags">
-            {/* <Tag/>
-            <Tag/>
-            <Tag/> */}
+            <Tag />
+            <Tag />
+            <Tag />
           </section>
         </div>
         <section id="host">
           <p>{hostText}</p>
-          <img src="images/icons/Host.png" alt="rond gris" />
+          <img src={ProfilHost} alt="profil de l'hôte" />
           <div className="rate">
+            <Star />
+            <Star />
+            <Star />
+            <Star />
+            <Star />
+          </div>
+          {/* <div className="rate">
             {[...Array(5)].map((_, i) => (
               <i key={i} className="fa-xs fa-solid fa-star" aria-hidden="true"></i>
             ))}
-          </div>
-        </section>
-        <section className="collapse">
-          <Collapse/>
-          <Collapse/>
+          </div> */}
         </section>
       </div>
+      <section className="collapse">
+        <Collapse />
+        <Collapse />
+      </section>
+      {/* </div> */}
     </>
   );
 }
@@ -63,7 +59,7 @@ function LogementDetails() {
 <p>Canal</p> */}
 export default LogementDetails;
 
-  {/* <button type="button" className="collapsible">Description</button>
+{/* <button type="button" className="collapsible">Description</button>
           <div className="content">
             <p>
               Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants.<br />
