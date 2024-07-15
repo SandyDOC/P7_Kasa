@@ -2,11 +2,16 @@
 
 .container_about {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
-    .collapsible_about {
-        button.collapsible {
-            width: 75%;
-        }
-    }
+    gap: 30px;
+    padding-bottom: 40px;
+
+    // .collapsible_about {
+    //     button.collapsible {
+    //         width: 956px;
+    //     }
+    // }
 }
+

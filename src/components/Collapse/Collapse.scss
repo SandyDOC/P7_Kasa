@@ -1,60 +1,165 @@
 @import "./../../assets/scss/style.scss";
 
+// #collapse {
+//   @media (max-width: 768px) {
+//     display: flex;
+//     justify-content: center;
+//     // padding: 0px 30px 40px 30px;
+//     // max-width: 1240px;
+//     // width: 355px;
+//     padding-bottom: 15px;
+//     // align-items: center;
+//     // padding-right: 9%;
+//   }
+// }
+
+// .collapsible {
+//   background-color: $primary-red;
+//   color: $tertiary-white;
+//   cursor: pointer;
+//   width: 95%;
+
+//   padding: 10px 20px 10px 20px;
+//   // width: 45%;
+//   border: none;
+//   text-align: left;
+//   outline: none;
+
+//   // font-family: "Montserrat", sans-serif;
+//   font-size: $size-x-mediumSize;
+//   font-weight: $fontBold;
+//   border-radius: 10px;
+
+//   @media (max-width: 768px) {
+//     max-width: 335px;
+//     padding: 5px 10px 5px 10px;
+//     font-size: 13px;
+//     line-height: 18.54px;
+//   }
+
+//   // p {
+//   //   display: flex;
+//   //   justify-content: space-between;
+//   //   align-items: center;
+//   // }
+
+//   .arrow {
+
+//   }
+// }
+
+// .content {
+//   display: none;
+
+//   overflow: hidden;
+//   background-color: $bg-grey-collapse;
+//   padding: 0 18px;
+//   width: 41%;
+
+//   font-weight: $fontRegular;
+//   font-size: $size-x-mediumSize;
+//   line-height: 25.67px;
+// }
+
+// .collapse_about {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin-top: 40px;
+//   margin-bottom: 40px;
+
+//   button.collapsible {
+//     margin-bottom: 20px;
+//     width: 75%;
+
+//     @media (max-width: 768px) {
+//       width: 100%;
+//     }
+//   }
+// }
+
+#collapse {
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+}
+
 .collapsible {
-  // background-color: #FF6060;
   background-color: $primary-red;
   color: $tertiary-white;
   cursor: pointer;
-
-  padding: 10px 20px 10px 10px;
-  width: 45%;
+  width: 20%;
+  padding: 10px 20px;
   border: none;
   text-align: left;
   outline: none;
-
-  // font-family: "Montserrat", sans-serif;
   font-size: $size-x-mediumSize;
   font-weight: $fontBold;
   border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 956px;
+
 
   @media (max-width: 768px) {
     max-width: 335px;
+    padding: 5px 10px;
     font-size: 13px;
     line-height: 18.54px;
   }
+}
 
-  p {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.arrow {
+  border: solid $tertiary-white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.up {
+  transform: rotate(45deg);
+}
+.down {
+  transition: transform 0.5s ease;
+  transform: rotate(-135deg);
 }
 
 .content {
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: $bg-grey-collapse;
   padding: 0 18px;
   width: 41%;
-
   font-weight: $fontRegular;
   font-size: $size-x-mediumSize;
   line-height: 25.67px;
-}
 
-.collapse_about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
-  margin-bottom: 40px;
-
-  button.collapsible {
-    margin-bottom: 20px;
-    width: 81%;
-
-    @media (max-width: 768px) {
-      width: 100%;
-    }
+  &.display {
+    display: block;
   }
 }
+
+// .collapse_about {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   margin-top: 40px;
+//   margin-bottom: 40px;
+
+//   button.collapsible {
+//     margin-bottom: 20px;
+//     width: 75%;
+
+//     @media (max-width: 768px) {
+//       width: 100%;
+//     }
+//   }
+// }
+
+// WidthFixed (1,023px)
+// HeightHug (54px)
+// Radius5px
+// Padding10px, 20px, 10px, 15px

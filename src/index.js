@@ -11,6 +11,7 @@ import LogementDetails from './pages/LogementDetails/LogementDetails';
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
+// import "./assets/scss/style.scss";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
