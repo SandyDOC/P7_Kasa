@@ -12,9 +12,11 @@ const title = "Cozy loft on the Canal Saint-Martin";
 const subtitle = "Paris, Île-de-France";
 const hostText = "Alexandre Dumas";
 
+const width = {width:"520px"};
+
 function LogementDetails() {
   return (
-    <>
+    <main>
       <Carrousel />
       <div className="main_logement">
         <div className="presentation">
@@ -46,36 +48,13 @@ function LogementDetails() {
         </section>
       </div>
       <section className="collapse">
-        <Collapse />
-        <Collapse />
+        <Collapse width={width}/>
+        <Collapse width={width}/>
       </section>
       {/* </div> */}
-    </>
+    </main>
   );
 }
 
-{/* <p>Cozy</p>
-<p>Paris 10</p>
-<p>Canal</p> */}
 export default LogementDetails;
 
-{/* <button type="button" className="collapsible">Description</button>
-          <div className="content">
-            <p>
-              Vous serez à 50m du canal Saint-martin où vous pourrez pique-niquer l'été et à côté de nombreux bars et restaurants.<br />
-              Au cœur de Paris avec 5 lignes de métro et de nombreux bus. Logement parfait pour les voyageurs en solo et les voyageurs d'affaires.<br />
-              Vous êtes à 1 station de la gare de l'est (7 minutes à pied).
-            </p>
-          </div>
-          <button type="button" className="collapsible">Équipements</button>
-          <div className="content">
-            <p>
-              Climatisation<br />
-              Wi-Fi<br />
-              Cuisine<br />
-              Espace de travail<br />
-              Fer à repasser<br />
-              Sèche-cheveux<br />
-              Cintres.
-            </p>
-          </div> */}

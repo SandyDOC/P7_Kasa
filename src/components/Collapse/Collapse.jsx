@@ -36,7 +36,7 @@ import React, { useState } from 'react';
 import './Collapse.scss';
 
 const title = "test title";
-const content = "test"
+const content = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget fermentum augue. Nulla arcu tellus, consequat a tincidunt vitae, dictum quis nisi. Pellentesque sollicitudin, quam eu malesuada mollis, libero nunc egestas est, eget convallis nunc nulla sit amet dolor. Cras pellentesque, dui eu maximus facilisis, massa nunc egestas tortor, vitae accumsan dui lectus nec libero. Pellentesque cursus tellus eu risus congue sagittis. Aliquam erat volutpat. Ut vehicula, urna eget elementum interdum, mauris orci ultricies magna, non venenatis dolor tortor ut arcu.Morbi tempus est at convallis convallis. Fusce euismod, elit at vulputate placerat, dui leo gravida mauris, at gravida dolor neque id elit. Morbi at commodo felis. Quisque nec facilisis ipsum. Quisque aliquam a massa sed pretium. Nam dapibus tempor lectus. Praesent quis tempor nulla. Sed id fermentum orci.Cras eget luctus magna. Nulla rhoncus, nisl vitae porttitor tempus, urna magna cursus arcu, sit amet auctor diam elit et lorem. Aenean bibendum vestibulum neque vitae blandit. Mauris rutrum tellus tortor, non euismod sapien elementum fringilla. Etiam non imperdiet elit. Aliquam fringilla vitae magna ut commodo. Etiam bibendum malesuada facilisis. Integer maximus ipsum metus, sed aliquet ligula hendrerit quis. Donec non metus nec odio laoreet imperdiet et lacinia risus. Nam porta, lectus sit amet blandit molestie, ligula nibh scelerisque dui, a auctor sapien turpis eget libero. "
 
 const Collapse = () => {
 // const Collapse = ({ title, content }) => {
