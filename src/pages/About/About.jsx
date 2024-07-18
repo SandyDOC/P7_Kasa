@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import data from "./../../data/aboutList.json";
 import "./About.scss";
 
@@ -12,7 +12,6 @@ function About() {
     return (
     <section className="container_about">
       <Banner image={BannerImage}/>
-
       {data.map((item) => (
         <Collapse key={item.id} title={item.title} content={item.content} width={widthAbout}/>
       ))}         

@@ -1,12 +1,20 @@
-import React from "react";
-import "./Tag.scss";
+import React from "react"; // Importation de React (nécessaire pour tout composant React).
+import "./Tag.scss"; // Importation des styles spécifiques pour les tags.
 
-const location = "Paris 10";
+function Tag(props) {
+    const { tags } = props; // Extraction des tags depuis les propriétés reçues.
 
-function Tag() {
-  return <>
-  <span className="tag">{location}</span>
-  </>
+    return (
+        <>
+            {tags.map((tag, index) => (
+                <span key={index} className="tag">
+                    {tag}
+                </span>
+            ))}
+        </>
+    );
 }
 
 export default Tag;
+// const location = "Paris 10";
+{/* <span className="tag">{location}</span> */ }
