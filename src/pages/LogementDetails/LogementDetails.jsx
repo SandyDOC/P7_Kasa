@@ -4,32 +4,30 @@ import data from "./../../data/data.json";
 import "./LogementDetails.scss";
 
 import Carrousel from "../../components/Carrousel/Carrousel";
-import Tag from "./../../components/Tag/Tag";
+// import Tag from "./../../components/Tag/Tag";
 import Star from "./../../components/Star/Star";
 import Collapse from "./../../components/Collapse/Collapse";
-import Profil from '../../components/Profil/Profil';
 
 import Error from "../Error/Error";
 
 import ArrowLeft from "./../../assets/images/icons/arrow_left.png"; // Importation de l'image de la flèche gauche.
 import ArrowRight from "./../../assets/images/icons/arrow_right.png"; // Importation de l'image de la flèche droite.
 import Background from "./../../assets/images/img/Background.png";
-import ProfilHost from "./../../assets/images/icons/Host.png";
-const title = "title : Appartement cosy";
-const subtitle = "location : Ile de France - Paris 17e";
-const hostText = "host.name : Nathalie Jean";
 
 function LogementDetails() {
   const widthLogement = '520px';
   const { id } = useParams();
-  // const logement = data.find(logement => logement.id === "c67ab8a7");
+
+  const logement = data.find((logementATrouver) => logementATrouver.id == id);
+
+  console.log(logement)
 
   // Vérifie si le logement est introuvable. Si c'est le cas, affiche un message d'erreur.
-  // if (!logement) {
-  //   return <Error />
-  // }
+  if (!logement) {
+    return <Error />
+  }
 
-  // const { title, location, host} = logement;
+  const { title, location, host, rating, tags } = logement;
 
   return (
     <main>
@@ -48,36 +46,29 @@ function LogementDetails() {
           src={ArrowRight}
           alt="flèche droite"
         /></section>
-        
+
       {/* <Carrousel /> */}
       <div className="main_logement">
         <div className="presentation">
           <section id="informations">
-            {/* <h1>{logement.title}</h1> */}
             <h1>{title}</h1>
-            {/* <p>{logement.location}</p> */}
-            <p>{subtitle}</p>
+            <p>{location}</p>
           </section>
 
           <section className="tags">
-            {/* {data.map((logement) => (
-              <div key={logement.id}>
-                <Tag tags={logement.tags} />
-              </div>
-            ))} */}
-            {/* <Tag />
-            <Tag />
-            <Tag /> */}
+            <span className="tag">{tags}</span>
+              {/* {data.map((index) => (
+        <span key= {index} className="tag">{tags}</span>
+      ))}  */}
           </section>
         </div>
 
         <section id="host">
-          {/* <Profil/> */}
-          <p>{hostText}</p>
-          <img src={ProfilHost} alt="profil de l'hôte" />
+          <p>{host.name}</p>
+          <img src={host.picture} alt="profil de l'hôte"/>
 
           <div className="rate">
-            <Star />
+            <Star data={rating} />
           </div>
           {/* <div className="rate">
         {[...Array(5)].map((_, i) => (
@@ -89,8 +80,17 @@ function LogementDetails() {
 
 
       <section className="collapse">
+
+        <Collapse title="Description" width={widthLogement}
+        // {data.map((item) => ( content={item.equipments}))}
+        />
+        <Collapse title="Équipements" width={widthLogement} />
+
+        {/* {data.map((item) => (
+        <Collapse key={item.id} title="Équipements" content={item.equipments} width={widthLogement}/>
+      ))}  */}
         {/* <Collapse title="Description" content={logement.description} index={0} width={widthLogement}/> */}
-        <Collapse title="Équipements" content={data.description} width={widthLogement} />
+        {/* <Collapse title="Équipements" content={logement.description} width={widthLogement} /> */}
         {/* <Collapse title="Équipements" content={item.equipments} width={widthLogement}/> */}
       </section>
       {/* </div> */}

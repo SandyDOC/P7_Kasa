@@ -3,21 +3,17 @@
 figure,
 .card_img {
   background: #FF6060;
-  // width: 75%;
   width: 340px;
   height: 340px;
-  // height: 26vh;
   position: relative;
   border-radius: 10px;
-  /* background:linear-gradient(to top, #040404 0.1%, #ff6060 30%); */
-  /* background:linear-gradient(#ffffff 0, #0a0a0a 0, #040404 20.5%, #000000 50%); */
+  object-fit: cover;
 
   &:hover {
     transform: scale(1.04);
   }
 
   @media (max-width: 768px) {
-    // width: 100%;
     width: 255px;
     height: 255px;
   }

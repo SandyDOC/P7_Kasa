@@ -26,9 +26,24 @@
     }
 }
 
-.tags {
-    display: flex;
-    gap: 20px;
+// .tags {
+//     display: flex;
+//     gap: 20px;
+// }
+.tag {
+    background: $primary-red;
+    color: white;
+
+    width: 115px;
+    height:25px ;
+    padding: 3px 20px 0px 20px;
+  
+    text-align: center;
+    border-radius: 10px;
+  
+    font-weight: $fontBold;
+    font-size: $size-x-small;
+    line-height:19.96px ;
 }
 
 #host {
@@ -36,6 +51,7 @@
 
     img {
         padding: 10px;
+        border-radius: 50%;
     }
 
     p {
