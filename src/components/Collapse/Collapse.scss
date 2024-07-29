@@ -1,90 +1,5 @@
 @import "./../../assets/scss/style.scss";
 
-// #collapse {
-//   @media (max-width: 768px) {
-//     display: flex;
-//     justify-content: center;
-//     // padding: 0px 30px 40px 30px;
-//     // max-width: 1240px;
-//     // width: 355px;
-//     padding-bottom: 15px;
-//     // align-items: center;
-//     // padding-right: 9%;
-//   }
-// }
-
-// .collapsible {
-//   background-color: $primary-red;
-//   color: $tertiary-white;
-//   cursor: pointer;
-//   width: 95%;
-
-//   padding: 10px 20px 10px 20px;
-//   // width: 45%;
-//   border: none;
-//   text-align: left;
-//   outline: none;
-
-//   // font-family: "Montserrat", sans-serif;
-//   font-size: $size-x-mediumSize;
-//   font-weight: $fontBold;
-//   border-radius: 10px;
-
-//   @media (max-width: 768px) {
-//     max-width: 335px;
-//     padding: 5px 10px 5px 10px;
-//     font-size: 13px;
-//     line-height: 18.54px;
-//   }
-
-//   // p {
-//   //   display: flex;
-//   //   justify-content: space-between;
-//   //   align-items: center;
-//   // }
-
-//   .arrow {
-
-//   }
-// }
-
-// .content {
-//   display: none;
-
-//   overflow: hidden;
-//   background-color: $bg-grey-collapse;
-//   padding: 0 18px;
-//   width: 41%;
-
-//   font-weight: $fontRegular;
-//   font-size: $size-x-mediumSize;
-//   line-height: 25.67px;
-// }
-
-// .collapse_about {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   margin-top: 40px;
-//   margin-bottom: 40px;
-
-//   button.collapsible {
-//     margin-bottom: 20px;
-//     width: 75%;
-
-//     @media (max-width: 768px) {
-//       width: 100%;
-//     }
-//   }
-// }
-
-// .collapse {
-//   display: flex;
-//   justify-content: space-around;
-//   // gap: 5%;
-//   padding-bottom: 60px;
-// }
-
 #collapse {
   display: flex;
   flex-direction: column;
@@ -101,7 +16,7 @@
   color: $tertiary-white;
   cursor: pointer;
 
-  padding:10px 20px 10px 20px ;
+  padding: 10px 20px 10px 20px;
   border: none;
   text-align: left;
   outline: none;
@@ -115,11 +30,7 @@
   align-items: center;
   width: 100%;
 
-  // width: 961px;
-  // width: 520px;
-
   @media (max-width: 768px) {
-    // max-width: 335px;
     padding: 5px 10px;
     font-size: 13px;
     line-height: 18.54px;
@@ -132,9 +43,10 @@
 
   width: 20px;
   height: 20px;
-  
+
   transition: transform 0.3s ease;
 }
+
 .open {
   transform: rotate(180deg);
 }
@@ -143,44 +55,25 @@
   display: none;
   overflow: hidden;
   background-color: $bg-grey-collapse;
-  padding: 1em;
-  // padding: 0 18px;
+  // padding: 1em;
+
+  width: 100%;
 
   font-weight: $fontRegular;
   font-size: $size-x-mediumSize;
   line-height: 25.67px;
 
-  border-radius:5px;
-  // width: 72%;
-  // height: auto;
+  border-radius: 5px;
 
   &.display {
     display: block;
   }
+
   @media (max-width: 768px) {
-    // max-width: 335px;
-   
     font-size: 13px;
     line-height: 18.54px;
   }
 }
-
-// .collapse_about {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   margin-top: 40px;
-//   margin-bottom: 40px;
-
-//   button.collapsible {
-//     margin-bottom: 20px;
-//     width: 75%;
-
-//     @media (max-width: 768px) {
-//       width: 100%;
-//     }
-//   }
-// }
 
 // WidthFixed (1,023px)
 // HeightHug (54px)

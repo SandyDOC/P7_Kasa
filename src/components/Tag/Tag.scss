@@ -1,9 +1,9 @@
 @import "./../../assets/scss/style.scss";
 
-// .tags {
-//     display: flex;
-//     gap: 20px;
-// }
+.tags {
+    display: flex;
+    gap: 20px;
+}
 .tag {
     background: $primary-red;
     color: white;

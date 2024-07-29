@@ -1,24 +1,12 @@
 import { useState } from "react"; // Importation du hook useState depuis React pour gérer l'état local.
-import { useParams } from "react-router-dom"; // Importation du hook useParams depuis react-router-dom pour accéder aux paramètres de l'URL.
-import data from "../../data/data.json"; // Importation des données depuis un fichier JSON local.
 
 import "./Carrousel.scss"; // Importation du fichier de style SCSS pour le composant Carrousel.
 import ArrowLeft from "./../../assets/images/icons/arrow_left.png"; // Importation de l'image de la flèche gauche.
 import ArrowRight from "./../../assets/images/icons/arrow_right.png"; // Importation de l'image de la flèche droite.
-import Error from "../../pages/Error/Error"; // Importation de la page Error.
 
-function Carrousel() {
-    const { id } = useParams(); // Récupération de l'ID du logement depuis les paramètres de l'URL.
-    const logement = data.find(logement => logement.id === id); // Recherche du logement correspondant à l'ID dans les données.
-
+function Carrousel({pictures}) {
     const [currentIndex, setCurrentIndex] = useState(0); // Déclaration de l'état local pour l'index de l'image actuelle dans le carrousel.
 
-    // Vérifie si le logement est introuvable. Si c'est le cas, affiche un message d'erreur.
-    if (!logement) {
-        return <Error />
-    }
-
-    const { pictures } = logement; // Extraction des images du logement.
     const length = pictures.length; // Détermine le nombre total d'images dans le carrousel.
 
     // Fonction pour passer à l'image suivante dans le carrousel.
@@ -32,11 +20,18 @@ function Carrousel() {
     };
 
     return (
+        // <section className="carrousel">
+        //     {pictures.map((image, index) =>
+        //      (
+        //         <img key={index} className=".carrousel-img" src={pictures[currentIndex]}/>
+        //     ))
+        //     }
+        // </section>
         <section className="carrousel">
             {length > 1 ? ( // Affiche la flèche gauche uniquement si le carrousel contient plus d'une image.
                 <img
                     onClick={previousImage} // Ajoute un gestionnaire de clic pour passer à l'image précédente.
-                    className="arrow_left" // Ajoute une classe CSS pour styliser la flèche gauche.
+                    className="carrousel-button prev" // Ajoute une classe CSS pour styliser la flèche gauche.
                     src={ArrowLeft} // Spécifie la source de l'image de la flèche gauche.
                     alt="Previous" // Ajoute un texte alternatif pour l'image.
                 />
@@ -49,7 +44,7 @@ function Carrousel() {
             {length > 1 ? ( // Affiche la flèche droite uniquement si le carrousel contient plus d'une image.
                 <img
                     onClick={nextImage} // Ajoute un gestionnaire de clic pour passer à l'image suivante.
-                    className="arrow_right" // Ajoute une classe CSS pour styliser la flèche droite.
+                    className="carrousel-button next" // Ajoute une classe CSS pour styliser la flèche droite.
                     src={ArrowRight} // Spécifie la source de l'image de la flèche droite.
                     alt="Next" // Ajoute un texte alternatif pour l'image.
                 />
@@ -80,19 +75,3 @@ function Carrousel() {
 }
 
 export default Carrousel; // Exporte le composant Carrousel pour pouvoir l'utiliser dans d'autres parties de l'application.
-
-{/* <img
-    src={Background}
-    className="carrousel-img"
-    alt="image relaxante d'une statue de Bouddha"
-/>
-<img
-    className="arrow_left"
-    src={ArrowLeft}
-    alt="flèche gauche"
-/>
-<img
-    className="arrow_right"
-    src={ArrowRight}
-    alt="flèche droite"
-/> */}
