@@ -4,7 +4,7 @@ import data from "./../../data/data.json";
 import "./LogementDetails.scss";
 
 import Carrousel from "../../components/Carrousel/Carrousel";
-// import Tag from "./../../components/Tag/Tag";
+import Tag from "./../../components/Tag/Tag";
 import Star from "./../../components/Star/Star";
 import Collapse from "./../../components/Collapse/Collapse";
 
@@ -27,7 +27,7 @@ function LogementDetails() {
     return <Error />
   }
 
-  const { title, location, host, rating, tags } = logement;
+  const { title, location, host, rating, tags,description, equipments } = logement;
 
   return (
     <main>
@@ -55,36 +55,31 @@ function LogementDetails() {
             <p>{location}</p>
           </section>
 
-          <section className="tags">
-            <span className="tag">{tags}</span>
-              {/* {data.map((index) => (
-        <span key= {index} className="tag">{tags}</span>
-      ))}  */}
-          </section>
+          <Tag tags={tags}/>
         </div>
 
         <section id="host">
           <p>{host.name}</p>
           <img src={host.picture} alt="profil de l'hôte"/>
 
-          <div className="rate">
-            <Star data={rating} />
-          </div>
           {/* <div className="rate">
+            <Star data={rating} />
+          </div> */}
+          <div className="rate">
         {[...Array(5)].map((_, i) => (
           <i key={i} className="fa-xs fa-solid fa-star" aria-hidden="true"></i>
         ))}
-      </div> */}
+      </div>
         </section>
       </div>
 
-
       <section className="collapse">
-
         <Collapse title="Description" width={widthLogement}
-        // {data.map((item) => ( content={item.equipments}))}
+        content={description}
         />
-        <Collapse title="Équipements" width={widthLogement} />
+        <Collapse title="Équipements" width={widthLogement}
+          content={equipments}
+        />
 
         {/* {data.map((item) => (
         <Collapse key={item.id} title="Équipements" content={item.equipments} width={widthLogement}/>
