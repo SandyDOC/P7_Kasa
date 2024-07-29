@@ -62,14 +62,14 @@ function LogementDetails() {
           <p>{host.name}</p>
           <img src={host.picture} alt="profil de l'hôte"/>
 
+          {/* <div className="rate"> */}
+            <Star rating={rating}/>
+          {/* </div> */}
           {/* <div className="rate">
-            <Star data={rating} />
-          </div> */}
-          <div className="rate">
         {[...Array(5)].map((_, i) => (
           <i key={i} className="fa-xs fa-solid fa-star" aria-hidden="true"></i>
         ))}
-      </div>
+      </div> */}
         </section>
       </div>
 
@@ -80,13 +80,6 @@ function LogementDetails() {
         <Collapse title="Équipements" width={widthLogement}
           content={equipments}
         />
-
-        {/* {data.map((item) => (
-        <Collapse key={item.id} title="Équipements" content={item.equipments} width={widthLogement}/>
-      ))}  */}
-        {/* <Collapse title="Description" content={logement.description} index={0} width={widthLogement}/> */}
-        {/* <Collapse title="Équipements" content={logement.description} width={widthLogement} /> */}
-        {/* <Collapse title="Équipements" content={item.equipments} width={widthLogement}/> */}
       </section>
       {/* </div> */}
     </main>
