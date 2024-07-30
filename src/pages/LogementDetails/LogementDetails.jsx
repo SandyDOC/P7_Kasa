@@ -10,10 +10,6 @@ import Collapse from "./../../components/Collapse/Collapse";
 
 import Error from "../Error/Error";
 
-// import ArrowLeft from "./../../assets/images/icons/arrow_left.png"; // Importation de l'image de la flèche gauche.
-// import ArrowRight from "./../../assets/images/icons/arrow_right.png"; // Importation de l'image de la flèche droite.
-// import Background from "./../../assets/images/img/Background.png";
-
 function LogementDetails() {
   const widthLogement = '520px';
   const { id } = useParams();
@@ -42,23 +38,7 @@ function LogementDetails() {
 
   return (
     <main>
-      {/* <section className='carrousel'><img
-        src={Background}
-        className="carrousel-img"
-        alt="image relaxante d'une statue de Bouddha"
-      />
-        <img
-          className="arrow_left"
-          src={ArrowLeft}
-          alt="flèche gauche"
-        />
-        <img
-          className="arrow_right"
-          src={ArrowRight}
-          alt="flèche droite"
-        /></section> */}
-
-      <Carrousel pictures={pictures}/>
+      <Carrousel pictures={pictures} />
       <div className="main_logement">
         <div className="presentation">
           <section id="informations">
@@ -73,7 +53,7 @@ function LogementDetails() {
           <Star rating={rating} />
         </section>
       </div>
-      <section className="collapse">
+      <section className='container_collapse'>
         <Collapse title="Description" width={widthLogement}
           content={description}
         />
