@@ -11,12 +11,9 @@ import Collapse from "./../../components/Collapse/Collapse";
 import Error from "../Error/Error";
 
 function LogementDetails() {
-  const widthLogement = '520px';
   const { id } = useParams();
 
   const logement = data.find((logementATrouver) => logementATrouver.id == id);
-
-  // console.log(logement)
 
   // Vérifie si le logement est introuvable. Si c'est le cas, affiche un message d'erreur.
   if (!logement) {
@@ -45,7 +42,14 @@ function LogementDetails() {
             <h1>{title}</h1>
             <p>{location}</p>
           </section>
-          <Tag tags={tags} />
+          <section className="tags">
+            {tags.map((tag, index) =>
+            (
+              <Tag key={index+tag} tag={tag} />
+            ))
+            }
+          </section>
+
         </div>
         <section id="host">
           <p>{host.name}</p>
@@ -54,10 +58,10 @@ function LogementDetails() {
         </section>
       </div>
       <section className='container_collapse'>
-        <Collapse title="Description" width={widthLogement}
+        <Collapse title="Description"
           content={description}
         />
-        <Collapse title="Équipements" width={widthLogement} content={renderEquipments(equipments)} />
+        <Collapse title="Équipements" content={renderEquipments(equipments)} />
       </section>
     </main>
   );

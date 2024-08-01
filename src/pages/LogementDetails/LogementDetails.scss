@@ -75,6 +75,7 @@
 .container_collapse {
     display: flex;
     gap: 3em;
+    width: 100%;
 
     @media (max-width: 768px) {
         display: flex;
