@@ -4,10 +4,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 961px;
+  // width: 961px;
 
   @media (max-width: 768px) {
-    max-width: 335px;
+    width: 10%;
   }
 }
 
@@ -55,7 +55,6 @@
   display: none;
   overflow: hidden;
   background-color: $bg-grey-collapse;
-  // padding: 1em;
 
   width: 100%;
 
@@ -74,8 +73,3 @@
     line-height: 18.54px;
   }
 }
-
-// WidthFixed (1,023px)
-// HeightHug (54px)
-// Radius5px
-// Padding10px, 20px, 10px, 15px

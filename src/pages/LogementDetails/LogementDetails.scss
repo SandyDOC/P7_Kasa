@@ -73,17 +73,15 @@
 }
 
 .container_collapse {
+    display: flex;
+    gap: 3em;
+
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
         gap: 1em;
     }
 }
-
-// .collapse {
-//     display: flex;
-//     justify-content: space-between;
-// }
 
 .equipment-list {
     list-style: none;
