@@ -1,57 +1,98 @@
 @import "./../../assets/scss/style.scss";
 
-header {
+// header {
+//     display: flex;
+//     justify-content: space-between;
+//     padding: 15px 9% 30px 2%;
+//     align-items: center;
+
+//     @media (max-width: 768px) {
+//         padding: 12px;
+//     }
+
+//     img {
+//         width: 210.32px;
+//         height: 68px;
+
+//         @media (max-width: 768px) {
+//             width: 145px;
+//             height: 46.88px;
+//         }
+//     }
+
+//     nav {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
+// }
+
+// header nav ul {
+//     display: flex;
+//     gap: 57px;
+
+//     @media (max-width: 768px) {
+//         gap: 26px;
+//     }
+
+//     li {
+//         display: flex;
+//         list-style: none;
+
+//         a {
+//             font-weight: $fontMedium;
+//             font-size: $size-large;
+//             line-height: 34.22px;
+//             text-decoration: none;
+//             color: $secondary-black;
+//             border-bottom: 2px solid white;
+
+//             @media (max-width: 768px) {
+//                 font-size: 12px;
+//                 line-height: 17.11px;
+//                 text-transform: uppercase;
+//             }
+
+//             &.selected {
+//                 border-bottom: 2px solid black;
+//             }
+//         }
+//     }
+// }
+
+.header {
     display: flex;
     justify-content: space-between;
-    padding: 15px 9% 30px 2%;
     align-items: center;
+    padding-inline: 52px;
+    padding-block: 30px;
 
-    @media (max-width: 768px) {
-        padding: 12px;
-    }
-
-    img {
+    .logo {
         width: 210.32px;
         height: 68px;
+    }
 
-        @media (max-width: 768px) {
-            width: 145px;
-            height: 46.88px;
+    .nav {
+        ul {
+            display: flex;
+            list-style-type: none;
+            margin-bottom: 0;
+            gap: 57px;
+
+            @media (max-width: 768px) {
+                gap: 26px;
+            }
         }
-    }
 
-    nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-header nav ul {
-    display: flex;
-    gap: 57px;
-
-    @media (max-width: 768px) {
-        gap: 26px;
-    }
-
-    li {
-        display: flex;
-        list-style: none;
+        li {
+            padding-inline: 10px;
+        }
 
         a {
             font-weight: $fontMedium;
             font-size: $size-large;
-            line-height: 34.22px;
-            text-decoration: none;
             color: $secondary-black;
             border-bottom: 2px solid white;
-
-            @media (max-width: 768px) {
-                font-size: 12px;
-                line-height: 17.11px;
-                text-transform: uppercase;
-            }
 
             &.selected {
                 border-bottom: 2px solid black;

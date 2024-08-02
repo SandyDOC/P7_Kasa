@@ -4,6 +4,11 @@
     font-family: $fontFamily;
   }
   
+  body {
+    max-width: 1920px;
+    margin: auto;
+    object-fit: cover;
+  }
   // body {
   //   // font-family: $fontFamily;
   //   // margin: 0;
@@ -12,14 +17,14 @@
   
   a {
     color: inherit;
-    // text-decoration: none;
+    text-decoration: none;
     list-style: none;
   }
 
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 50px;
-  }
+  // main {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   padding-bottom: 50px;
+  // }
   
