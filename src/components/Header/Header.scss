@@ -67,9 +67,18 @@
     padding-inline: 52px;
     padding-block: 30px;
 
+    @media (max-width: 768px) {
+        padding-inline: 10px;
+    }
+
     .logo {
         width: 210.32px;
         height: 68px;
+
+        @media (max-width: 768px) {
+            width: 145px;
+            height: 46.88px;
+        }
     }
 
     .nav {
@@ -96,6 +105,11 @@
 
             &.selected {
                 border-bottom: 2px solid black;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 12px;
+                text-transform: uppercase;
             }
         }
     }
