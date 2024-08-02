@@ -1,16 +1,16 @@
-// import React from "react";
 import Logo from "./../../assets/images/logo/Logo_Kasa-Red.png";
-import { NavLink } from "react-router-dom";
+import { useLocation, NavLink } from "react-router-dom";
 import "./Header.scss";
 
 function Header() {
+    const location = useLocation();
     return (
     <header>
         <img src={Logo} alt="logo Kasa" />
         <nav>
             <ul>
-                <li><NavLink to="/">Accueil</NavLink></li>
-                <li><NavLink to="/about">A propos</NavLink></li>
+                <li><NavLink to="/" className={location.pathname === '/' ? 'selected' : 'navlink'}>Accueil</NavLink></li>
+                <li><NavLink to="/about" className={location.pathname === '/about' && 'selected'}>A propos</NavLink></li>
            </ul>
         </nav>
     </header>

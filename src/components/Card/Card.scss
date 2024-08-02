@@ -8,7 +8,6 @@ figure,
   position: relative;
   border-radius: 10px;
   object-fit: cover;
-
   // &:hover {
   //   transform: scale(1.04);
   // }
@@ -20,16 +19,24 @@ figure,
 
   figcaption {
     position: absolute;
-    bottom: 14px;
-    left: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
     font-size: $size-x-mediumSize;
-    // font-size: 18px;
     font-weight: $fontBold;
-    // font-weight: 700;
     color: $tertiary-white;
-    // color: white;
-    // background: linear-gradient(#FFFFFF 0%, #0A0A0A 0%, #040404 20.5%, #000 50%);
-    background: linear-gradient(45deg, black, transparent);
+    background: linear-gradient(to top, black, transparent);
+    // background: linear-gradient(to bottom,
+    //     #FFFFFF 0%,
+    //     #0A0A0A 0%,
+    //     #040404 20.5%,
+    //     #000000 50%);
+    // background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: end;
+    padding: 13px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 }
