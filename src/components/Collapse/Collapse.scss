@@ -5,6 +5,8 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+
+  max-width: 961px;
 }
 
 .collapsible {
@@ -56,7 +58,7 @@
   z-index: 1;
   margin-top: -8px;
 
-  padding: 9px;
+  padding: 17px;
 
   font-weight: $fontRegular;
   font-size: $size-x-mediumSize;

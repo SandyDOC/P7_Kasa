@@ -5,12 +5,12 @@ import "./Card.scss";
 
 function Card({id, title, cover}) {
  return (
-  <Link to={`/logement-details/${id}`}> 
+  <Link to={`/logement-details/${id}`} className="cardHome"> 
  
-    <figure>
+    {/* <figure> */}
       <img src={cover} alt={title} className="card_img" />
-      <figcaption>{title}</figcaption>
-    </figure>
+      <figcaption className="text">{title}</figcaption>
+    {/* </figure> */}
   </Link>
  )
 }

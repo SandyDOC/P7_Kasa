@@ -1,12 +1,16 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: $fontFamily;
+    // margin: 0px;
+    // padding: 0px;
+    // font-family: $fontFamily;
+    box-sizing: border-box;
   }
   
   body {
+    margin: 0px;
+    padding: 0px;
+    font-family: $fontFamily;
     max-width: 1920px;
-    margin: auto;
+    // margin: auto;
     // object-fit: cover;
   }
   // body {

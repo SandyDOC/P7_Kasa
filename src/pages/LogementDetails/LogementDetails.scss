@@ -5,7 +5,8 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 40px 0 40px 40px;
-    width: 83%;
+    width: 100%;
+    align-items: center;
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -57,10 +58,18 @@
 
 #host {
     text-align: center;
+    display: flex;
+    gap: 16px;
 
-    img {
-        padding: 10px;
+    .host-img {
+        height: 64px;
+        width: 64px;
+        // padding: 10px;
         border-radius: 50%;
+    }
+    .star{
+        height: 24px;
+        width: 24px;
     }
 
     p {
@@ -68,7 +77,7 @@
         font-weight: $fontMedium;
         font-size: $size-x-mediumSize;
 
-        line-height: 25.67px;
+        // line-height: 25.67px;
     }
 }
 
@@ -76,11 +85,16 @@
     display: flex;
     gap: 3em;
     width: 100%;
+    justify-content: center;
+    margin-bottom: 40px;
 
     @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
         gap: 1em;
+    }
+    .collapse {
+        max-width: 520px;
     }
 }
 

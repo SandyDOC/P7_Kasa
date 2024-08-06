@@ -45,16 +45,20 @@ function LogementDetails() {
           <section className="tags">
             {tags.map((tag, index) =>
             (
-              <Tag key={index+tag} tag={tag} />
+              <Tag key={index + tag} tag={tag} />
             ))
             }
           </section>
 
         </div>
         <section id="host">
-          <p>{host.name}</p>
-          <img src={host.picture} alt="profil de l'hôte" />
-          <Star rating={rating} />
+          <div className='host-name'>
+            <p>{host.name}</p>
+          </div>
+          <div className='host-profil'>
+            <img className='host-img' src={host.picture} alt="profil de l'hôte" />
+            <Star rating={rating} />
+          </div>
         </section>
       </div>
       <section className='container_collapse'>
