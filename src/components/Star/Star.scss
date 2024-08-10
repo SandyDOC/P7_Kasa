@@ -1,6 +1,10 @@
 @import "./../../assets/scss/style.scss";
 
 .star {
-    width: 24px;
-    height: 24px;
+    display: flex;
+    width: 20px;
+
+    @media (max-width: 768px) {
+        width: 14px;
+    }
 }

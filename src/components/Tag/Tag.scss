@@ -1,20 +1,20 @@
 @import "./../../assets/scss/style.scss";
 
-.tags {
-    display: flex;
-    gap: 20px;
-
-}
 .tag {
     background: $primary-red;
-    color: white;
+    color: $tertiary-white;
     width: fit-content;
-    height:25px ;
-    padding: 3px 20px 0px 20px;
-  
+
+    padding: 4px 10px 4px 10px;
+
     text-align: center;
     border-radius: 10px;
-  
+
     font-weight: $fontBold;
     font-size: $size-x-small;
+
+    @media (max-width: 768px) {
+        font-size: 10px;
+        font-weight: 700;
+    }
 }

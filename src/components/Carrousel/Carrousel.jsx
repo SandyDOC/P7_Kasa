@@ -22,15 +22,19 @@ function Carrousel({ pictures }) {
 
     return (
         <section className="carrousel">
+            {/* <div className="arrow"> */}
+
+                {length > 1 ? (
+                    <img
+                        onClick={previousImage}
+                        className="carrousel-button prev"
+                        src={ArrowLeft}
+                        alt="Previous"
+                    />
+                ) : null}
+
+            {/* </div> */}
             {/* Affiche la flèche gauche uniquement si le carrousel contient plus d'une image */}
-            {length > 1 ? (
-                <img
-                    onClick={previousImage}
-                    className="carrousel-button prev"
-                    src={ArrowLeft}
-                    alt="Previous"
-                />
-            ) : null}
 
             {pictures.map((image, index) => (
                 <img
