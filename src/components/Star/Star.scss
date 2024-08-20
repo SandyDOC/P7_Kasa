@@ -1,10 +1,15 @@
 @import "./../../assets/scss/style.scss";
 
-.star {
+.rate {
     display: flex;
-    width: 20px;
+    gap: 10px;
 
-    @media (max-width: 768px) {
-        width: 14px;
+    .star {
+        display: flex;
+        width: 20px;
+
+        @media (max-width: 768px) {
+            width: 14px;
+        }
     }
 }

@@ -5,7 +5,6 @@ import Banner from "./../../components/Banner/Banner";
 import BannerImage from "./../../assets/images/img/bannerAbout.png";
 import Collapse from "./../../components/Collapse/Collapse";
 
-
 function About() {
   return (
     <main className="container_about">

@@ -22,20 +22,15 @@ function Carrousel({ pictures }) {
 
     return (
         <section className="carrousel">
-            {/* <div className="arrow"> */}
-
-                {length > 1 ? (
-                    <img
-                        onClick={previousImage}
-                        className="carrousel-button prev"
-                        src={ArrowLeft}
-                        alt="Previous"
-                    />
-                ) : null}
-
-            {/* </div> */}
             {/* Affiche la flèche gauche uniquement si le carrousel contient plus d'une image */}
-
+            {length > 1 ? (
+                <img
+                    onClick={previousImage}
+                    className="carrousel-button prev"
+                    src={ArrowLeft}
+                    alt="Previous"
+                />
+            ) : null}
             {pictures.map((image, index) => (
                 <img
                     key={index}
@@ -44,11 +39,6 @@ function Carrousel({ pictures }) {
                     className={index === currentIndex ? "carrousel-img active" : "carrousel-img inactive"} // Ajoute une classe CSS pour styliser l'image.
                 />
             ))}
-            {/* <img
-                        className="carrousel_image" // Ajoute une classe CSS pour styliser l'image du carrousel.
-                        src={pictures[currentIndex]} // Spécifie la source de l'image actuelle à afficher dans le carrousel.
-                        alt={`Slide ${currentIndex + 1}`} // Ajoute un texte alternatif pour l'image actuelle.
-                    /> */}
             {/* Affiche le numéro de la slide uniquement si le carrousel contient plus d'une image         */}
             {length > 1 && (
                 <span className="slider__number">

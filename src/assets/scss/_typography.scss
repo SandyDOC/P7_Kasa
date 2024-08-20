@@ -1,14 +1,12 @@
 * {
-    margin: 0px;
-    // padding: 0px;
-    // font-family: $fontFamily;
+    // margin: 0px;
     box-sizing: border-box;
+    font-family: $fontFamily;
   }
   
   body {
     margin: 0px;
-    padding: 0px;
-    font-family: $fontFamily;
+    // padding: 0px;
     max-width: 1920px;
     height: 100vh;
   }
@@ -28,10 +26,4 @@
     object-fit: cover;
   }
 
-  // main {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   padding-bottom: 50px;
-  // }
   

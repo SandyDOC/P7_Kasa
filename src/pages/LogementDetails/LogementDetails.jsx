@@ -37,31 +37,29 @@ function LogementDetails() {
     <main className='container-logement'>
       <Carrousel pictures={pictures} />
       <div className="main_logement">
-        {/* <div className="presentation"> */}
-          <section id="informations">
-            <h1>{title}</h1>
-            <p>{location}</p>
-            <div className="tags">
-              {tags.map((tag, index) =>
-              (
-                <Tag key={index + tag} tag={tag} />
-              ))
-              }
-            </div>
-          </section>
 
-        {/* </div> */}
+        <section id="informations">
+          <h1>{title}</h1>
+          <p>{location}</p>
+          <div className="tags">
+            {tags.map((tag, index) =>
+            (
+              <Tag key={index + tag} tag={tag} />
+            ))
+            }
+          </div>
+        </section>
+
         <section id="host">
           <div className='host-name'>
             <p>{host.name}</p>
             <img className='host-img' src={host.picture} alt="profil de l'hôte" />
           </div>
-          {/* <div className='rate'> */}
-            <Star rating={rating} />
-          {/* </div> */}
+          <Star rating={rating} />
         </section>
       </div>
-      <section className='container_collapse'>
+
+      <section id='container_collapse'>
         <Collapse title="Description"
           content={description}
         />

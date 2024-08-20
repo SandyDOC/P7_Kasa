@@ -11,22 +11,12 @@ function Home() {
     <main className="container-home">
       <Banner image={BannerHome} title="Chez vous, partout et ailleurs" />
       <section id="gallery">
-        {/* <div className="gallery-container"> */}
         {data.map((item) => (
           <Card key={item.id} id={item.id} title={item.title} cover={item.cover} />
         ))}
-        {/* </div> */}
       </section>
     </main>
   )
 }
 
 export default Home;
-
-//Gestion des EVENEMENTS on...(onClick, onSubmit)
-//  const handleClick = (e) => {
-//   console.log(e)
-//   alert("J'ai cliqué sur le titre")
-// }
-
-{/* <Card onClick={handleClick}/> */ }

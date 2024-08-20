@@ -1,9 +1,9 @@
 import "./Tag.scss"; // Importation des styles spécifiques pour les tags.
 
-function Tag({tag}) {
+function Tag({ tag }) {
 
     return (
-        <span  className="tag">{tag}</span>
+        <span className="tag">{tag}</span>
     );
 }
 

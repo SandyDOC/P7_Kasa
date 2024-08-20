@@ -1,4 +1,3 @@
-// import React from "react";
 import Logo from "./../../assets/images/logo/Logo_Kasa_White.png";
 import "./Footer.scss";
 

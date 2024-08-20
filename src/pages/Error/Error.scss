@@ -1,32 +1,52 @@
 @import "./../../assets/scss/style.scss";
 
-main {
+.container-error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    padding-bottom: 250px;
+
     p.numberError {
         color: $primary-red;
         font-weight: $fontBold;
+        text-align: center;
 
         font-size: 288px;
         line-height: 410.69px;
-    
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
         @media (max-width: 768px) {
             font-size: 99px;
+            line-height: 296.69px;
         }
     }
+
     p.explicationError {
         color: $primary-red;
         font-weight: $fontMedium;
         font-size: $size-big-large;
+        text-align: center;
 
         line-height: 51.34px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
 
         @media (max-width: 768px) {
             font-size: $size-x-mediumSize;
             line-height: 25.67px;
-            width: 70%;
         }
     }
+
     a.homeError {
         padding: 60px;
+        text-decoration: underline;
+        font-size: $size-x-mediumSize;
+        font-weight: $fontMedium;
 
         @media (max-width: 768px) {
             font-size: $size-x-small;
