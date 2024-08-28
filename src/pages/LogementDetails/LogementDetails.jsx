@@ -13,7 +13,7 @@ import Error from "../Error/Error";
 function LogementDetails() {
   const { id } = useParams();
 
-  const logement = data.find((logementATrouver) => logementATrouver.id == id);
+  const logement = data.find((logementATrouver) => logementATrouver.id === id);
 
   // Vérifie si le logement est introuvable. Si c'est le cas, affiche un message d'erreur.
   if (!logement) {
