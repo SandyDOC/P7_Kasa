@@ -68,4 +68,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # P7_Kasa
+
+## Compétences du projet
+
+- Initialiser une application avec Create React App
+- Configurer la navigation entre les pages de l'application avec React Router
+- Développer des éléments de l'interface d'un site web grâce à des composants React
+- Mettre en œuvre des animations CSS
+- Développer une interface web avec Sass
+
+## Technologies utilisées
+
+- React
+- [maquette Figma](https://www.figma.com/file/2BZEoBhyxt5IwZgRn0wGsL/Kasa_FR?type=design&node-id=0-1&mode=design&t=1KgUwWWFtuAVbsJ5-0/)
+- React Router
+- Sass
